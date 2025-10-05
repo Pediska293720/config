@@ -1,4 +1,2 @@
-scripts/
-shell2.py
-test.bat
+shell.py
 .venv/
