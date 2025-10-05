@@ -12,7 +12,30 @@
 - **Отдалочный вывод всех заданных параметров при запуске**
 - **Обработка ошибок выполнения скриптов**
 - **Тестовые скрипты реальной ОС для проверки функциональности**
-  
+
+## Примеры использования
+Запуск с параметрами VFS:
+```bash
+py shell2.py --vfs-path ./my_data
+```
+<img width="682" height="70" alt="Снимок экрана 2025-10-06 012607" src="https://github.com/user-attachments/assets/eaaa11fe-0765-4985-b030-6c2bf7074285" />
+
+Запуск со скриптом:
+```bash
+py shell2.py --script scripts/input.txt
+```
+<img width="769" height="280" alt="image" src="https://github.com/user-attachments/assets/c1d0963f-756a-4f39-8aa9-f7afa70842af" />
+
+Комбинированный запуск:
+```bash
+py shell2.py --vfs-path ./test_vfs --script scripts/input.txt
+```
+<img width="758" height="280" alt="image" src="https://github.com/user-attachments/assets/d91c2a75-41e8-46bc-95cd-07961402daf3" />
+
+Запуск тестового скрипта ОС:
+```bash
+test.bat
+```
 
 
 
