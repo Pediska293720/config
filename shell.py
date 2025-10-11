@@ -61,7 +61,7 @@ def test_parser():
 
 def main():
     while True:
-        user_input = input(f'{LOGIN}@{HOSTNAME}:/>  ').strip()
+        user_input = input('VFS:/>  ').strip()
         if not user_input:
             continue
         command, args = parse_command(user_input)
@@ -80,5 +80,3 @@ if __name__ == "__main__":
         test_parser()
         print("\n" + "=" * 50 + "\n")
     main()
-
-#C:\Users\NASTYA\PycharmProjects\config> py shell.py - для запуска
