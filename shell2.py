@@ -115,13 +115,15 @@ def test_parser():
 def main():
     vfs, scr = parse_arguments()
 
-    print(f'VFS Path: {vfs or 'vfs_data (default)'}')
-    print(f'Script: {scr or 'not specified'}')
+    print(f'VFS Path: {vfs or "vfs_data (default)"}')
+    print(f'Script: {scr or "not specified"}')
 
     vfs_root = setup_vfs(vfs)
 
     if scr:
-        execute_script(scr)
+        should_exit = execute_script(scr)
+        if should_exit:
+            return
 
     while True:
         user_input = input(f'{LOGIN}@{HOSTNAME}:/>  ').strip()
@@ -140,6 +142,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-#C:\Users\NASTYA\PycharmProjects\config> py shell.py - для запуска
